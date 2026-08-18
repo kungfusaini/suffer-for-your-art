@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Suffer for Your Art · Process Archive</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Process archive</p>
+          <h1>Suffer for Your Art</h1>
+        </div>
+        <p class="topbar-note">Every frame is replayed from its recorded marks.</p>
+      </header>
+
+      <main class="layout">
+        <aside class="rail" aria-label="Painting archive">
+          <div class="rail-header">
+            <h2>Works</h2>
+            <button id="refresh-btn" class="quiet-button" type="button">Refresh</button>
+          </div>
+          <div id="run-list" class="run-list" role="list" aria-live="polite"></div>
+        </aside>
+
+        <article class="player" aria-label="Selected painting">
+          <div class="object-stage">
+            <section class="viewer-column" aria-label="Canonical painting playback">
+              <figure class="player-canvas-wrap">
+                <img id="frame-img" alt="Current playback frame" />
+                <div id="canvas-overlay" class="overlay" role="status" aria-live="polite">
+                  <p id="status-text">Choose a work from the archive.</p>
+                </div>
+              </figure>
+
+              <section class="controls" aria-label="Playback controls">
+                <div class="timeline-row">
+                  <label for="frame-slider">Stroke</label>
+                  <input id="frame-slider" type="range" min="0" max="0" value="0" disabled />
+                  <output id="frame-counter" for="frame-slider">0 / 0</output>
+                </div>
+
+                <div class="transport-row">
+                  <div class="transport" aria-label="Frame navigation">
+                    <button id="restart-btn" class="quiet-button" type="button" disabled>Restart</button>
+                    <button id="prev-btn" class="quiet-button" type="button" disabled>Previous</button>
+                    <button id="play-btn" class="primary-button" type="button" aria-pressed="false" disabled>Play</button>
+                    <button id="next-btn" class="quiet-button" type="button" disabled>Next</button>
+                  </div>
+
+                  <div class="speed-control" role="group" aria-label="Playback speed">
+                    <span class="speed-label">Speed</span>
+                    <button class="speed-btn" type="button" data-speed="0.5" aria-pressed="false">0.5×</button>
+                    <button class="speed-btn is-active" type="button" data-speed="1" aria-pressed="true">1×</button>
+                    <button class="speed-btn" type="button" data-speed="2" aria-pressed="false">2×</button>
+                    <button class="speed-btn" type="button" data-speed="4" aria-pressed="false">4×</button>
+                    <button class="speed-btn" type="button" data-speed="8" aria-pressed="false">8×</button>
+                    <button class="speed-btn" type="button" data-speed="16" aria-pressed="false">16×</button>
+                  </div>
+                </div>
+              </section>
+            </section>
+
+            <section class="meta" aria-labelledby="run-title">
+              <p class="eyebrow">Selected work</p>
+              <h2 id="run-title">No work selected</h2>
+
+              <dl id="work-record" class="work-record">
+                <div><dt>Initial prompt</dt><dd id="run-prompt"></dd></div>
+                <div><dt>Artist’s initial vision</dt><dd id="artist-rationale-text"></dd></div>
+                <div><dt>Final description</dt><dd id="artist-quote"></dd></div>
+              </dl>
+
+              <button id="context-toggle" class="context-toggle" type="button" aria-expanded="false" aria-controls="context-viewer" disabled>
+                Inspect provenance
+              </button>
+            </section>
+          </div>
+
+          <section id="context-viewer" class="context-viewer" aria-labelledby="context-title" hidden>
+            <header class="context-header">
+              <div>
+                <p class="eyebrow">Round evidence</p>
+                <h3 id="context-title">Model context</h3>
+                <p id="context-provenance"></p>
+              </div>
+              <button id="context-close" class="quiet-button" type="button">Close</button>
+            </header>
+
+            <div class="context-round-controls">
+              <button id="context-prev" class="quiet-button" type="button" disabled>Previous</button>
+              <label for="context-round">Round</label>
+              <input id="context-round" type="range" min="1" max="1" value="1" disabled />
+              <output id="context-round-count" for="context-round">1 / 1</output>
+              <button id="context-next" class="quiet-button" type="button" disabled>Next</button>
+            </div>
+
+            <p id="context-status" class="context-status" role="status" aria-live="polite"></p>
+
+            <div id="context-content" hidden>
+              <div class="context-tabs" role="tablist" aria-label="Model context sections">
+                <button id="context-tab-overview" role="tab" type="button" data-context-tab="overview" aria-selected="true" aria-controls="context-panel-overview">Overview</button>
+                <button id="context-tab-moves" role="tab" type="button" data-context-tab="moves" aria-selected="false" aria-controls="context-panel-moves" tabindex="-1" hidden>Recent moves</button>
+                <button id="context-tab-prompt" role="tab" type="button" data-context-tab="prompt" aria-selected="false" aria-controls="context-panel-prompt" tabindex="-1">Prompt</button>
+                <button id="context-tab-schema" role="tab" type="button" data-context-tab="schema" aria-selected="false" aria-controls="context-panel-schema" tabindex="-1">Schema</button>
+                <button id="context-tab-raw" role="tab" type="button" data-context-tab="raw" aria-selected="false" aria-controls="context-panel-raw" tabindex="-1">Raw request</button>
+              </div>
+
+              <section id="context-panel-overview" class="context-panel" role="tabpanel" aria-labelledby="context-tab-overview" data-context-panel="overview">
+                <div class="context-seen">
+                  <div>
+                    <p class="context-section-label">Canvas shown before this round</p>
+                    <img id="context-canvas" alt="Canvas shown to the model" />
+                  </div>
+                  <dl class="context-facts">
+                    <div><dt>Strokes before</dt><dd id="context-strokes-before">—</dd></div>
+                    <div><dt>Required batch</dt><dd id="context-batch-size">—</dd></div>
+                    <div><dt>Prompt template</dt><dd id="context-prompt-version">—</dd></div>
+                    <div><dt>Canvas SHA-256</dt><dd id="context-canvas-hash">—</dd></div>
+                    <div><dt>Request SHA-256</dt><dd id="context-request-hash">—</dd></div>
+                  </dl>
+                </div>
+              </section>
+
+              <section id="context-panel-moves" class="context-panel" role="tabpanel" aria-labelledby="context-tab-moves" data-context-panel="moves" hidden>
+                <div class="recent-feedback">
+                  <div>
+                    <p class="context-section-label">Numbered diagnostic map</p>
+                    <img id="context-recent-map" alt="Numbered map of the most recent strokes" />
+                  </div>
+                  <div>
+                    <h4>Exact actions behind the highlighted marks</h4>
+                    <p class="context-panel-note">This map is model context only. It never alters the canonical painting.</p>
+                    <pre id="context-move-list"></pre>
+                  </div>
+                </div>
+              </section>
+
+              <section id="context-panel-prompt" class="context-panel" role="tabpanel" aria-labelledby="context-tab-prompt" data-context-panel="prompt" hidden>
+                <div class="context-messages">
+                  <section id="context-system-section">
+                    <h4>System instruction</h4>
+                    <pre id="context-system"></pre>
+                  </section>
+                  <section>
+                    <h4>User intention, state, and history</h4>
+                    <pre id="context-user"></pre>
+                  </section>
+                  <section>
+                    <h4>Canvas message</h4>
+                    <pre id="context-canvas-message"></pre>
+                  </section>
+                  <section id="context-recent-message-section" hidden>
+                    <h4>Recent action-output instruction</h4>
+                    <pre id="context-recent-message"></pre>
+                  </section>
+                </div>
+              </section>
+
+              <section id="context-panel-schema" class="context-panel" role="tabpanel" aria-labelledby="context-tab-schema" data-context-panel="schema" hidden>
+                <p class="context-panel-note">The structured action contract supplied with this round.</p>
+                <pre id="context-schema"></pre>
+              </section>
+
+              <section id="context-panel-raw" class="context-panel" role="tabpanel" aria-labelledby="context-tab-raw" data-context-panel="raw" hidden>
+                <div class="raw-header">
+                  <p class="context-panel-note">Exact serialized request body. Authorization headers and credentials are never included.</p>
+                  <button id="context-raw-load" class="quiet-button" type="button">Load request</button>
+                </div>
+                <pre id="context-raw">Select “Load request” to fetch the exact body.</pre>
+              </section>
+            </div>
+          </section>
+        </article>
+      </main>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

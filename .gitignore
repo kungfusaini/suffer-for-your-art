@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+env/
+
+# tooling
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# generated paint outputs
+artifacts/
+
+# OS/editor noise
+.DS_Store
+*.swp
