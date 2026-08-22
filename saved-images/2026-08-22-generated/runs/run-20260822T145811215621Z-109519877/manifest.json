@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "prompt_template_version": "8.0",
+  "run_id": "run-20260822T145811215621Z-109519877",
+  "created_at": "2026-08-22T14:58:11.230743+00:00",
+  "mode": "paint",
+  "prompt": "draw yourself",
+  "model": "gemma-4-e4b-it",
+  "canvas": {
+    "size": 512,
+    "color_mode": "RGBA"
+  },
+  "seed": 109519877,
+  "max_rounds": 6,
+  "max_strokes": 20,
+  "stroke_budget": 100,
+  "total_strokes": 1,
+  "status": "failed",
+  "stop_reason": "[400] NanoGPT subscription request failed",
+  "rounds_executed": 1,
+  "manifest_path": "artifacts/run-20260822T145811215621Z-109519877/manifest.json",
+  "process_log": "artifacts/run-20260822T145811215621Z-109519877/process.jsonl",
+  "final_image": "artifacts/run-20260822T145811215621Z-109519877/final.png",
+  "final_canvas_hash": "c61559fa3355bc2eb5a66879c0c467c4e8c716acfec040db7f8bad50cad1725b",
+  "round_records": [
+    {
+      "round": 1,
+      "observation": "The canvas is blank. I need to establish the basic form of a head to begin the self-portrait.",
+      "interpretation": "I will use the central 3x3 square provided in the studio guide for the placement of the main subject's face.",
+      "done": false,
+      "strokes_count": 1,
+      "before_hash": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+      "after_hash": "c61559fa3355bc2eb5a66879c0c467c4e8c716acfec040db7f8bad50cad1725b",
+      "initial_idea": "A self-portrait, starting with a basic outline of a head shape centered in the canvas, respecting the compositional guide.",
+      "title": "Initial head shape sketch",
+      "working_state": {
+        "current_goal": "Define the basic oval shape for the head.",
+        "completed_parts": [
+          "Rough centering of the subject."
+        ],
+        "last_change": "Started defining the central mass.",
+        "next_action": "Continue sketching the outline of the head shape.",
+        "alignment": "aligned"
+      },
+      "final_reflection": "The first stroke is minimal, intended to start defining the general area for the head, centered around the middle guide square."
+    }
+  ],
+  "initial_idea": "A self-portrait, starting with a basic outline of a head shape centered in the canvas, respecting the compositional guide.",
+  "title": "Initial head shape sketch",
+  "working_state": {
+    "current_goal": "Define the basic oval shape for the head.",
+    "completed_parts": [
+      "Rough centering of the subject."
+    ],
+    "last_change": "Started defining the central mass.",
+    "next_action": "Continue sketching the outline of the head shape.",
+    "alignment": "aligned"
+  },
+  "final_reflection": "The first stroke is minimal, intended to start defining the general area for the head, centered around the middle guide square.",
+  "frames": [
+    "frames/frame_000.png",
+    "frames/frame_001.png"
+  ],
+  "dry_run_mode": false,
+  "reference_image": null
+}

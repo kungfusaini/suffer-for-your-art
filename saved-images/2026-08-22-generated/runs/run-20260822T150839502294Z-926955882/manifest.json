@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "prompt_template_version": "2.0",
+  "run_id": "run-20260822T150839502294Z-926955882",
+  "created_at": "2026-08-22T15:08:39.517293+00:00",
+  "mode": "paint",
+  "prompt": "draw yourself",
+  "model": "deepseek/deepseek-v4-flash-vision-exp",
+  "canvas": {
+    "size": 512,
+    "color_mode": "RGBA"
+  },
+  "seed": 926955882,
+  "max_rounds": 5,
+  "max_strokes": 20,
+  "stroke_budget": 100,
+  "total_strokes": 100,
+  "status": "done",
+  "stop_reason": "stroke_budget_exhausted",
+  "rounds_executed": 5,
+  "manifest_path": "artifacts/run-20260822T150839502294Z-926955882/manifest.json",
+  "process_log": "artifacts/run-20260822T150839502294Z-926955882/process.jsonl",
+  "final_image": "artifacts/run-20260822T150839502294Z-926955882/final.png",
+  "final_canvas_hash": "760a52045a70dc2e0f875b964af04a42f5b2b3ced682ff7e997324f7418223d4",
+  "round_records": [
+    {
+      "round": 1,
+      "observation": "The canvas is completely blank and empty. I will begin painting a stylized self-portrait, starting with the head, facial features, and shoulders.",
+      "interpretation": "Round 1: Laying in the first layer of a self-portrait\u2014simple geometric shapes for the face, hair, eyes, nose, mouth, and shoulders. Using dark outlines to establish the main structure before adding shading.",
+      "done": false,
+      "strokes_count": 20,
+      "before_hash": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+      "after_hash": "3b29d94114950a8aa79e91b6389b3616806922d4ae21a4ec65efec54351eb1c1"
+    },
+    {
+      "round": 2,
+      "observation": "The canvas shows the initial outline of a self-portrait: a round face with two hair buns, arched eyebrows, closed/curved eyes, a simple nose, a smiling mouth, a small neck, and shoulders. The lines are thin and mostly dark, with a few accents in blue and green.",
+      "interpretation": "Round 2: Adding color and depth to the self-portrait. I am filling in the hair, darkening the eyebrows and eyes, shading the cheeks and nose, reinforcing the mouth, and giving the neck/shoulders a colored garment. Using warmer and darker tones to make the figure more solid.",
+      "done": false,
+      "strokes_count": 20,
+      "before_hash": "3b29d94114950a8aa79e91b6389b3616806922d4ae21a4ec65efec54351eb1c1",
+      "after_hash": "0aae495d39bf5ccc855e3482c383a06dc98a279449a09a088523e7901ceb8553"
+    },
+    {
+      "round": 3,
+      "observation": "The canvas shows a stylized self-portrait sketch: a large round head with two curved hair buns on the sides, arched eyebrows, closed/curved eyes, a simple nose, a small smiling mouth with red/rose lips, a thin neck, and green shoulders. The lines are thin and sparse, with the figure floating on a blank white background.",
+      "interpretation": "Round 3: Deepening the self-portrait by adding solid fills and shading. I will strengthen the hair buns, define the eyes and eyebrows more clearly, add warmth to the skin tone, reinforce the smile, and build the shoulders/garment. I am moving from sketchy outline to a more dimensional, colorful figure.",
+      "done": false,
+      "strokes_count": 20,
+      "before_hash": "0aae495d39bf5ccc855e3482c383a06dc98a279449a09a088523e7901ceb8553",
+      "after_hash": "35757eec384a1b181f5862ee527c47b09ed765036713e55cf989417c12acc7e9"
+    },
+    {
+      "round": 4,
+      "observation": "The canvas shows a stylized self-portrait: a round face with two hair buns, arched eyebrows, closed/curved eyes, a simple nose, a small smiling mouth with red/rose lips, a thin neck, and green shoulders. The figure is still very sketchy and sparse, floating on a blank white background.",
+      "interpretation": "Round 4: Moving from outline to a more dimensional painted figure. I am filling the hair buns with dark brown, adding soft skin tones to the forehead and cheeks, strengthening the eyebrows and eyes, adding blush and deeper lip color, and giving the shoulders a solid green garment. This builds depth and warmth before the final finish.",
+      "done": false,
+      "strokes_count": 20,
+      "before_hash": "35757eec384a1b181f5862ee527c47b09ed765036713e55cf989417c12acc7e9",
+      "after_hash": "e3b623792d32047e401d93a138a7a18a1a53fe9fea04bd9eed81c291dbb9913e"
+    },
+    {
+      "round": 5,
+      "observation": "The canvas shows a stylized self-portrait in progress: a round face with two hair buns, arched eyebrows, closed/curved eyes, a simple nose, a small smiling mouth with red lips, a thin neck, and green shoulders. The figure remains sketchy and sparse, floating on a blank white background.",
+      "interpretation": "Round 5: Final refinement of the self-portrait. I am adding solid fills and bold lines to bring the figure to life: darkening the hair buns, shading the face with warm skin tones, deepening the eyes and lips, reinforcing the necklace/shoulders, and adding final contours. This completes the painting.",
+      "done": true,
+      "strokes_count": 20,
+      "before_hash": "e3b623792d32047e401d93a138a7a18a1a53fe9fea04bd9eed81c291dbb9913e",
+      "after_hash": "760a52045a70dc2e0f875b964af04a42f5b2b3ced682ff7e997324f7418223d4"
+    }
+  ],
+  "initial_idea": "",
+  "title": "",
+  "working_state": {},
+  "final_reflection": "",
+  "frames": [
+    "frames/frame_000.png",
+    "frames/frame_001.png",
+    "frames/frame_002.png",
+    "frames/frame_003.png",
+    "frames/frame_004.png",
+    "frames/frame_005.png"
+  ],
+  "dry_run_mode": true,
+  "reference_image": null
+}

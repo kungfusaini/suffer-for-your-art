@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "prompt_template_version": "8.0",
+  "run_id": "run-20260822T145829286923Z-1790425496",
+  "created_at": "2026-08-22T14:58:29.303528+00:00",
+  "mode": "paint",
+  "prompt": "draw yourself",
+  "model": "phi-4-multimodal-instruct",
+  "canvas": {
+    "size": 512,
+    "color_mode": "RGBA"
+  },
+  "seed": 1790425496,
+  "max_rounds": 6,
+  "max_strokes": 20,
+  "stroke_budget": 100,
+  "total_strokes": 0,
+  "status": "failed",
+  "stop_reason": "[400] NanoGPT subscription request failed",
+  "rounds_executed": 0,
+  "manifest_path": "artifacts/run-20260822T145829286923Z-1790425496/manifest.json",
+  "process_log": "artifacts/run-20260822T145829286923Z-1790425496/process.jsonl",
+  "final_image": "artifacts/run-20260822T145829286923Z-1790425496/final.png",
+  "final_canvas_hash": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+  "round_records": [],
+  "initial_idea": "",
+  "title": "",
+  "working_state": {},
+  "final_reflection": "",
+  "frames": [
+    "frames/frame_000.png"
+  ],
+  "dry_run_mode": false,
+  "reference_image": null
+}
