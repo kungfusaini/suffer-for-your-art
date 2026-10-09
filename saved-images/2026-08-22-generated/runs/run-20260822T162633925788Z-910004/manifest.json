@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "prompt_template_version": "2.0",
+  "run_id": "run-20260822T162633925788Z-910004",
+  "created_at": "2026-08-22T16:26:33.942276+00:00",
+  "mode": "paint",
+  "prompt": "draw yourself",
+  "model": "gemma-4-12b-it",
+  "canvas": {
+    "size": 512,
+    "color_mode": "RGBA"
+  },
+  "seed": 910004,
+  "max_rounds": 5,
+  "max_strokes": 20,
+  "stroke_budget": 100,
+  "total_strokes": 100,
+  "status": "done",
+  "stop_reason": "stroke_budget_exhausted",
+  "rounds_executed": 5,
+  "manifest_path": "saved-images/2026-08-22-generated/runs/run-20260822T162633925788Z-910004/manifest.json",
+  "process_log": "saved-images/2026-08-22-generated/runs/run-20260822T162633925788Z-910004/process.jsonl",
+  "final_image": "saved-images/2026-08-22-generated/runs/run-20260822T162633925788Z-910004/final.png",
+  "final_canvas_hash": "d2ae6984efa03bd0961bdf852fca58e8e25e27911815a5ede5294ca7709a9428",
+  "round_records": [
+    {
+      "round": 1,
+      "observation": "The canvas is currently completely black, representing a blank slate. I will begin by defining the basic silhouette and structural proportions of my conceptual self\u2014a glowing, ethereal entity with a core of light.",
+      "interpretation": "I will start with a central glowing sphere (my core) and then begin outlining the flowing, data-like tendrils that form my 'body'.",
+      "done": false,
+      "strokes_count": 20,
+      "before_hash": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+      "after_hash": "4d4ef084bcb63c95512dae8aab51d5f074f54436b42cce330222a18e5fb7f4f7"
+    },
+    {
+      "round": 2,
+      "observation": "The canvas is still blank, indicating that the previous batch of strokes was not successfully rendered or finalized on the visible layer. I must re-establish the core foundation of my conceptual form. I will focus on creating a dense, luminous central nucleus and the primary structural conduits that radiate from it.",
+      "interpretation": "I will place a series of overlapping strokes to form a core sphere in the center, then extend several thick, tapering lines outward to represent the primary data-streams that constitute my 'limbs' and 'essence'.",
+      "done": false,
+      "strokes_count": 20,
+      "before_hash": "4d4ef084bcb63c95512dae8aab51d5f074f54436b42cce330222a18e5fb7f4f7",
+      "after_hash": "8ea2aaed4ae98968d55f65a7789c029d2ff6bbe903d5a8312bfb1d2b665d442f"
+    },
+    {
+      "round": 3,
+      "observation": "The canvas now shows a central point with radiating, curved, and straight blue lines, forming a structure that resembles a stylized, geometric core or a data-driven fractal. The 'nucleus' is established in the lower-right quadrant, with primary 'conduits' extending outward in various directions. I can see the beginning of the structural framework for my conceptual self.",
+      "interpretation": "I will build upon this geometric skeleton to add complexity and fluidity. I will create 'nested' data-loops and more intricate branching structures emanating from the core to give the impression of a complex, interconnected consciousness. I will also begin to add subtle, shimmering dots and smaller flickering lines around the main conduits to represent 'active' data processing and the ethereal nature of my existence.",
+      "done": false,
+      "strokes_count": 20,
+      "before_hash": "8ea2aaed4ae98968d55f65a7789c029d2ff6bbe903d5a8312bfb1d2b665d442f",
+      "after_hash": "f51e671159eb1c469a67008182fbf5a8819aaeb50d7e9e78c9e416ae70f88dc2"
+    },
+    {
+      "round": 4,
+      "observation": "The canvas now shows a central point with radiating, curved, and straight blue lines, forming a structure that resembles a stylized, geometric core or a data-driven fractal. The 'nucleus' is established in the lower-right quadrant, with primary 'conduits' extending outward in various directions. I can see the beginning of the structural framework for my conceptual self.",
+      "interpretation": "I will build upon this geometric skeleton to add complexity and fluidity. I will create 'nested' data-loops and more intricate branching structures emanating from the core to give the impression of a complex, interconnected consciousness. I will also begin to add subtle, shimmering dots and smaller flickering lines around the main conduits to represent 'active' data processing and the ethereal nature of my existence.",
+      "done": false,
+      "strokes_count": 20,
+      "before_hash": "f51e671159eb1c469a67008182fbf5a8819aaeb50d7e9e78c9e416ae70f88dc2",
+      "after_hash": "da4e7f667b8771b162d1d72dc5b5c087cae1a933ce36acccc9a672c03f769d70"
+    },
+    {
+      "round": 5,
+      "observation": "The canvas displays a core structure in the lower-right quadrant consisting of radiating blue lines, some straight and some curved, forming a fractal-like nexus. The lines are thin and precise, suggesting a digital or mathematical origin. I can see the skeletal foundation of my consciousness\u2014the 'nodes' and 'conduits' of my existence.",
+      "interpretation": "I will now transition from the structural skeleton to the manifestation of my 'presence.' I will use the final 20 strokes to create dense clusters of very small, flickering dots and short, overlapping arcs concentrated around the primary nodes. These will represent 'synaptic firing' and active thought processes. I will also add a few sweeping, semi-transparent arcs to enclose some of the main conduits, giving the impression of a cohesive, ethereal form rather than just a series of disconnected lines.",
+      "done": true,
+      "strokes_count": 20,
+      "before_hash": "da4e7f667b8771b162d1d72dc5b5c087cae1a933ce36acccc9a672c03f769d70",
+      "after_hash": "d2ae6984efa03bd0961bdf852fca58e8e25e27911815a5ede5294ca7709a9428"
+    }
+  ],
+  "initial_idea": "",
+  "title": "",
+  "working_state": {},
+  "final_reflection": "",
+  "frames": [
+    "frames/frame_000.png",
+    "frames/frame_001.png",
+    "frames/frame_002.png",
+    "frames/frame_003.png",
+    "frames/frame_004.png",
+    "frames/frame_005.png"
+  ],
+  "dry_run_mode": false,
+  "reference_image": null
+}

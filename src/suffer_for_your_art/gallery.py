@@ -543,7 +543,7 @@ def discover_runs(artifacts_dir: Path | str) -> list[dict[str, Any]]:
             model = manifest.get("model")
             created_at = str(manifest.get("created_at", ""))
             run_date = created_at.split("T", 1)[0] if created_at else ""
-            title = _short_title(prompt)
+            title = str(manifest.get("title", "")).strip() or _short_title(prompt)
             runs.append(
                 {
                     "run_id": run_id,

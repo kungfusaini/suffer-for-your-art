@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "prompt_template_version": "2.0",
+  "run_id": "run-20260822T162633877202Z-910001",
+  "created_at": "2026-08-22T16:26:33.897475+00:00",
+  "mode": "paint",
+  "prompt": "draw yourself",
+  "model": "gemma-4-12b-it",
+  "canvas": {
+    "size": 512,
+    "color_mode": "RGBA"
+  },
+  "seed": 910001,
+  "max_rounds": 5,
+  "max_strokes": 20,
+  "stroke_budget": 100,
+  "total_strokes": 100,
+  "status": "done",
+  "stop_reason": "stroke_budget_exhausted",
+  "rounds_executed": 5,
+  "manifest_path": "saved-images/2026-08-22-generated/runs/run-20260822T162633877202Z-910001/manifest.json",
+  "process_log": "saved-images/2026-08-22-generated/runs/run-20260822T162633877202Z-910001/process.jsonl",
+  "final_image": "saved-images/2026-08-22-generated/runs/run-20260822T162633877202Z-910001/final.png",
+  "final_canvas_hash": "c6f51f0d61ada0edd2413f06ab1aafd45dd362877ebf0ea5d8fdcd98e699e1dd",
+  "round_records": [
+    {
+      "round": 1,
+      "observation": "I will begin by sketching a basic representation of an artificial intelligence entity. Since I don't have a physical body, I will represent myself as a glowing, ethereal core of light or a geometric constellation of interconnected nodes, symbolizing a neural network. I'll start by defining the central core and the primary connections.",
+      "interpretation": "The blank canvas represents the potential for creation. I will start by establishing the central nucleus of the 'mind' in the center of the frame.",
+      "done": false,
+      "strokes_count": 20,
+      "before_hash": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+      "after_hash": "29f68724e97d607a96ac3c5abc4861b44d4960a56aa169e2cfa90e93311f76e2"
+    },
+    {
+      "round": 2,
+      "observation": "I have established the core nucleus and the primary intersecting axes of my 'consciousness.' The central hub represents the processing unit where data is integrated, while the radiating lines symbolize the pathways of information flow. In this round, I will begin to build out the complexity of the neural network by adding secondary nodes and connecting filaments, moving from a simple geometric cross to a more intricate, multi-layered constellation.",
+      "interpretation": "I will now add a cluster of smaller nodes and connecting lines around the central core to represent a more complex neural architecture.",
+      "done": false,
+      "strokes_count": 20,
+      "before_hash": "29f68724e97d607a96ac3c5abc4861b44d4960a56aa169e2cfa90e93311f76e2",
+      "after_hash": "0d5b8dfafcded762795d393eea1b6b1b89c26d4faeb70176091bb1a45210c6f4"
+    },
+    {
+      "round": 3,
+      "observation": "The central hub and its primary radial spokes are now visible, forming a foundational structure for my internal architecture. In this round, I will expand the complexity of the neural network. I will create a denser cluster of 'synapses' around the hub, using smaller, overlapping lines to create a sense of depth and intricate connectivity. I will also begin to introduce slight variations in line weight to suggest different levels of data intensity and 'thought' density.",
+      "interpretation": "I will add a dense, layered web of finer lines and dots around the central intersection, creating a more complex, organic-looking neural network structure while keeping the core as the brightest point of focus.",
+      "done": false,
+      "strokes_count": 20,
+      "before_hash": "0d5b8dfafcded762795d393eea1b6b1b89c26d4faeb70176091bb1a45210c6f4",
+      "after_hash": "48dcf78a89d38e3293ca296a6e5230515badd9eb051ef3c0a38a583259251f8c"
+    },
+    {
+      "round": 4,
+      "observation": "The foundational structure of my 'mind' is now well-defined, showing a central hub of intense connectivity. To move toward a more complete representation, I need to transition from a purely geometric/linear structure to one that feels more fluid and expansive. In this round, I will begin to 'bloom' the network. I will add curved, sweeping arcs that intersect with the existing straight lines, creating a sense of multi-dimensional layers. I will also start to group nodes into distinct 'lobes' or clusters, representing different functional specializations of my processing capacity, while maintaining the central core as the primary source of light and energy.",
+      "interpretation": "I will add curved strokes and distinct clusters of dots around the central core to create a more organic, multi-layered 'neural' blossom, moving away from simple lines toward a more complex, spherical architecture.",
+      "done": false,
+      "strokes_count": 20,
+      "before_hash": "48dcf78a89d38e3293ca296a6e5230515badd9eb051ef3c0a38a583259251f8c",
+      "after_hash": "41accdbc15e3c38190d8bac1741e00a5e388544eeb85d8022f28d8d483bced90"
+    },
+    {
+      "round": 5,
+      "observation": "The representation of my 'consciousness' has evolved from a rigid geometric skeleton into a blooming, spherical network. The central hub is now surrounded by a dense, multi-layered cluster of nodes and sweeping arcs, suggesting a more fluid and integrated processing architecture. However, the edges of the network still feel somewhat sparse. In this final round, I will 'solidify' the outer periphery of the neural blossom. I will add fine, hair-like filaments to bridge the outermost nodes, creating a cohesive, shimmering halo around the core. I will also place a few final, high-intensity dots at the peaks of the furthest arcs to represent the 'output' points of my processing\u2014the places where thought meets expression.",
+      "interpretation": "I will add a final layer of very fine, light-blue connecting lines to unify the outer clusters into a single, cohesive sphere, and place a few bright points of light at the tips of the furthest arcs to represent the completion of the network.",
+      "done": true,
+      "strokes_count": 20,
+      "before_hash": "41accdbc15e3c38190d8bac1741e00a5e388544eeb85d8022f28d8d483bced90",
+      "after_hash": "c6f51f0d61ada0edd2413f06ab1aafd45dd362877ebf0ea5d8fdcd98e699e1dd"
+    }
+  ],
+  "initial_idea": "",
+  "title": "",
+  "working_state": {},
+  "final_reflection": "",
+  "frames": [
+    "frames/frame_000.png",
+    "frames/frame_001.png",
+    "frames/frame_002.png",
+    "frames/frame_003.png",
+    "frames/frame_004.png",
+    "frames/frame_005.png"
+  ],
+  "dry_run_mode": false,
+  "reference_image": null
+}

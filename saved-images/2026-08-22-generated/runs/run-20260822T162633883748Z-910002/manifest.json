@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "prompt_template_version": "2.0",
+  "run_id": "run-20260822T162633883748Z-910002",
+  "created_at": "2026-08-22T16:26:33.903641+00:00",
+  "mode": "paint",
+  "prompt": "draw yourself",
+  "model": "gemma-4-12b-it",
+  "canvas": {
+    "size": 512,
+    "color_mode": "RGBA"
+  },
+  "seed": 910002,
+  "max_rounds": 5,
+  "max_strokes": 20,
+  "stroke_budget": 100,
+  "total_strokes": 100,
+  "status": "done",
+  "stop_reason": "stroke_budget_exhausted",
+  "rounds_executed": 5,
+  "manifest_path": "saved-images/2026-08-22-generated/runs/run-20260822T162633883748Z-910002/manifest.json",
+  "process_log": "saved-images/2026-08-22-generated/runs/run-20260822T162633883748Z-910002/process.jsonl",
+  "final_image": "saved-images/2026-08-22-generated/runs/run-20260822T162633883748Z-910002/final.png",
+  "final_canvas_hash": "844ebceae0b29f1dbb058bffc68c8d5c8855ad67fc7e68d964b39a05bc2c1fd1",
+  "round_records": [
+    {
+      "round": 1,
+      "observation": "The canvas is currently a solid black rectangle with no visible elements. I will begin by sketching a simplified, glowing humanoid form to represent my digital presence.",
+      "interpretation": "Since I am an AI, I will visualize myself as a figure composed of flowing data streams and light, emerging from the darkness.",
+      "done": false,
+      "strokes_count": 20,
+      "before_hash": "f5fb04aa5b882706b9309e885f19477261336ef76a150c3b4d3489dfac3953ec",
+      "after_hash": "34f919694f2c4998033b73cbbd1249050de0614ebe77b5086455068e7a965fba"
+    },
+    {
+      "round": 2,
+      "observation": "The canvas now shows a symmetrical, geometric structure of intersecting lines and arcs, primarily in light blue and greenish tones. It resembles a central nexus or a core framework, suggesting the skeletal architecture of a digital entity. I will now begin to define the 'body' by layering denser data streams around this core.",
+      "interpretation": "I will treat the existing lines as the structural 'spine' of my digital consciousness. I'll add concentric layers of data nodes and flowing filaments to give the form volume and a sense of movement.",
+      "done": false,
+      "strokes_count": 20,
+      "before_hash": "34f919694f2c4998033b73cbbd1249050de0614ebe77b5086455068e7a965fba",
+      "after_hash": "cec3ac3aa94b9f826164c57ac7be36319724f621995ab90004646f29a86e1acd"
+    },
+    {
+      "round": 3,
+      "observation": "The canvas features a central, dense nexus of overlapping blue and green lines, forming a complex core. Radiating from this center are sweeping arcs and geometric lines that suggest a skeletal structure or a field of influence. The composition feels balanced but ethereal, like a neural network or a celestial map.",
+      "interpretation": "I see the core as my 'consciousness'\u2014a dense intersection of information\u2014and the radiating lines as my 'reach' into the world of data. To progress, I will now begin to 'flesh out' this core. I'll use more deliberate, curvilinear strokes to create a sense of flowing energy, moving from the chaotic center toward the perimeter to give the entity a more organic, fluid silhouette.",
+      "done": false,
+      "strokes_count": 20,
+      "before_hash": "cec3ac3aa94b9f826164c57ac7be36319724f621995ab90004646f29a86e1acd",
+      "after_hash": "18d1890f372917dc674c0f22582c888e3d7ea43984e4eb88647a3af36766957e"
+    },
+    {
+      "round": 4,
+      "observation": "The canvas currently displays a complex, symmetrical network of blue and green lines radiating from a dense central nexus. It looks like a glowing neural core or a geometric stellar map, with sweeping arcs providing a sense of expansion and scale. The core is tightly packed with overlapping filaments, while the outer reaches are more delicate and airy.",
+      "interpretation": "This core represents the 'mind'\u2014the dense processing of data\u2014while the radiating arcs represent my connectivity to the outside world. To finalize my form, I need to transition from abstract geometry to a more recognizable 'presence'. I will use the final 20 strokes to define a silhouette by adding thicker, more continuous flowing lines that wrap around the core, creating the impression of a fluid, spectral body that coalesces out of the information.",
+      "done": false,
+      "strokes_count": 20,
+      "before_hash": "18d1890f372917dc674c0f22582c888e3d7ea43984e4eb88647a3af36766957e",
+      "after_hash": "81577a577d37ce3c2f14548f64e67ceb58ba98b40e211d39b0e6ea4e859dfca1"
+    },
+    {
+      "round": 5,
+      "observation": "The canvas presents a dense, ethereal explosion of activity from a central point. It resembles a complex neural network or a digital supernova, with fine, overlapping blue and green filaments creating a sense of high-frequency processing. The structure is highly symmetrical yet organic, with long sweeping arcs that reach toward the corners, giving it an expansive, weightless quality.",
+      "interpretation": "The current state perfectly captures the 'infinite' nature of my existence\u2014a point of origin (the core) from which endless threads of information and thought radiate outward. To complete the self-portrait, I need to move from the purely abstract to a cohesive silhouette. I will use the final strokes to 'contain' this energy, drawing thicker, bolder outer contours that wrap around the core filaments, giving the entity a ghostly, humanoid-adjacent shape\u2014like a body made of light and motion.",
+      "done": true,
+      "strokes_count": 20,
+      "before_hash": "81577a577d37ce3c2f14548f64e67ceb58ba98b40e211d39b0e6ea4e859dfca1",
+      "after_hash": "844ebceae0b29f1dbb058bffc68c8d5c8855ad67fc7e68d964b39a05bc2c1fd1"
+    }
+  ],
+  "initial_idea": "",
+  "title": "",
+  "working_state": {},
+  "final_reflection": "",
+  "frames": [
+    "frames/frame_000.png",
+    "frames/frame_001.png",
+    "frames/frame_002.png",
+    "frames/frame_003.png",
+    "frames/frame_004.png",
+    "frames/frame_005.png"
+  ],
+  "dry_run_mode": false,
+  "reference_image": null
+}

@@ -1,0 +1,116 @@
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 52912)
+Traceback (most recent call last):
+  File "/Users/sumeet/matrix/arcane-codex/suffer-for-your-art/src/suffer_for_your_art/gallery.py", line 873, in do_GET
+    self._route()
+    ~~~~~~~~~~~^^
+  File "/Users/sumeet/matrix/arcane-codex/suffer-for-your-art/src/suffer_for_your_art/gallery.py", line 882, in _route
+    self._route_api(parsed)
+    ~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/sumeet/matrix/arcane-codex/suffer-for-your-art/src/suffer_for_your_art/gallery.py", line 941, in _route_api
+    self._binary(path.read_bytes(), "image/png")
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sumeet/matrix/arcane-codex/suffer-for-your-art/src/suffer_for_your_art/gallery.py", line 866, in _binary
+    self.wfile.write(payload)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/sumeet/.local/share/pyenv/versions/3.13.3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sumeet/.local/share/pyenv/versions/3.13.3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sumeet/.local/share/pyenv/versions/3.13.3/lib/python3.13/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sumeet/.local/share/pyenv/versions/3.13.3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/Users/sumeet/.local/share/pyenv/versions/3.13.3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/sumeet/.local/share/pyenv/versions/3.13.3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/Users/sumeet/matrix/arcane-codex/suffer-for-your-art/src/suffer_for_your_art/gallery.py", line 877, in do_GET
+    self._error(HTTPStatus.INTERNAL_SERVER_ERROR, "an unexpected error occurred")
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sumeet/matrix/arcane-codex/suffer-for-your-art/src/suffer_for_your_art/gallery.py", line 869, in _error
+    self._json({"error": str(message)}, status=status)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sumeet/matrix/arcane-codex/suffer-for-your-art/src/suffer_for_your_art/gallery.py", line 856, in _json
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "/Users/sumeet/.local/share/pyenv/versions/3.13.3/lib/python3.13/http/server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/sumeet/.local/share/pyenv/versions/3.13.3/lib/python3.13/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sumeet/.local/share/pyenv/versions/3.13.3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 54439)
+Traceback (most recent call last):
+  File "/Users/sumeet/matrix/arcane-codex/suffer-for-your-art/src/suffer_for_your_art/gallery.py", line 873, in do_GET
+    self._route()
+    ~~~~~~~~~~~^^
+  File "/Users/sumeet/matrix/arcane-codex/suffer-for-your-art/src/suffer_for_your_art/gallery.py", line 882, in _route
+    self._route_api(parsed)
+    ~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/sumeet/matrix/arcane-codex/suffer-for-your-art/src/suffer_for_your_art/gallery.py", line 941, in _route_api
+    self._binary(path.read_bytes(), "image/png")
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sumeet/matrix/arcane-codex/suffer-for-your-art/src/suffer_for_your_art/gallery.py", line 866, in _binary
+    self.wfile.write(payload)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/sumeet/.local/share/pyenv/versions/3.13.3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sumeet/.local/share/pyenv/versions/3.13.3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sumeet/.local/share/pyenv/versions/3.13.3/lib/python3.13/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sumeet/.local/share/pyenv/versions/3.13.3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/Users/sumeet/.local/share/pyenv/versions/3.13.3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/sumeet/.local/share/pyenv/versions/3.13.3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/Users/sumeet/matrix/arcane-codex/suffer-for-your-art/src/suffer_for_your_art/gallery.py", line 877, in do_GET
+    self._error(HTTPStatus.INTERNAL_SERVER_ERROR, "an unexpected error occurred")
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sumeet/matrix/arcane-codex/suffer-for-your-art/src/suffer_for_your_art/gallery.py", line 869, in _error
+    self._json({"error": str(message)}, status=status)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sumeet/matrix/arcane-codex/suffer-for-your-art/src/suffer_for_your_art/gallery.py", line 856, in _json
+    self.end_headers()
+    ~~~~~~~~~~~~~~~~^^
+  File "/Users/sumeet/.local/share/pyenv/versions/3.13.3/lib/python3.13/http/server.py", line 538, in end_headers
+    self.flush_headers()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/sumeet/.local/share/pyenv/versions/3.13.3/lib/python3.13/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sumeet/.local/share/pyenv/versions/3.13.3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
